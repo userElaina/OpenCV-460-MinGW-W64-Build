@@ -41,6 +41,8 @@
 
 #include "precomp.hpp"
 
+#define NO_DSHOW_STRSAFE
+
 #if defined _WIN32 && defined HAVE_DSHOW
 #include "cap_dshow.hpp"
 
