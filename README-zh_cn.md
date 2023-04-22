@@ -15,6 +15,7 @@
 
 ```sh
 git clone https://github.com/opencv/opencv.git
+cd opencv
 git reset --hard 725e440d278aca07d35a5e8963ef990572b07316
 ```
 
@@ -31,7 +32,6 @@ git reset --hard 725e440d278aca07d35a5e8963ef990572b07316
 选择
 
 ```sh
-ENABLE_CXX11
 BUILD_opencv_world
 ```
 
@@ -40,9 +40,11 @@ BUILD_opencv_world
 ```sh
 ENABLE_PRECOMPILED_HEADERS
 WITH_MSMF
+WITH_OBSENSOR
 ```
 
-如果存在上述选项.
+如果存在上述选项. 
+这是原因: https://forum.opencv.org/t/opencv-cmake-opencv-building-error/11566/11.
 
 如果你只想要 C/C++ 依赖, 不选
 
@@ -66,9 +68,9 @@ BUILD_opencv_ts
 
 #### 建立
 
-打开控制台并 `cd` 到 `build` 文件夹.
-
 ```sh
+mkdir -p build
+cd build
 mingw32-make -j 32
 mingw32-make install
 ```
