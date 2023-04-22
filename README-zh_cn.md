@@ -4,7 +4,7 @@
 
 #### 准备
 
-获得 `MinGW-W64` 从 https://sourceforge.net/projects/mingw-w64/files/ . 
+获得 `MinGW-W64` 从 https://www.mingw-w64.org/downloads/#mingw-builds. 
 选择你需要的版本, 解压并将 `mingw64\bin\` 添加到 PATH.
 
 获得 `CMake` 从 https://cmake.org/download/. 
