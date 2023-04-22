@@ -4,7 +4,7 @@
 
 #### Preparation
 
-Get `MinGW-W64` from https://sourceforge.net/projects/mingw-w64/files/. 
+Get `MinGW-W64` from https://www.mingw-w64.org/downloads/#mingw-builds. 
 Select the version you need. Download, unzip and add `mingw64/bin/` to PATH.
 
 Get `CMake` from https://cmake.org/download/. 
