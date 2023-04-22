@@ -43,7 +43,8 @@ WITH_MSMF
 WITH_OBSENSOR
 ```
 
-if exists.
+if exists. 
+That's why: https://forum.opencv.org/t/opencv-cmake-opencv-building-error/11566/11.
 
 If you only what the C/C++ dependency library, uncheck
 
