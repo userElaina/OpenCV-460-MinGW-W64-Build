@@ -15,6 +15,7 @@ Get `CMake` from https://cmake.org/download/.
 
 ```sh
 git clone https://github.com/opencv/opencv.git
+cd opencv
 git reset --hard 725e440d278aca07d35a5e8963ef990572b07316
 ```
 
@@ -31,7 +32,6 @@ Click `Finish` and wait a while.
 Check
 
 ```sh
-ENABLE_CXX11
 BUILD_opencv_world
 ```
 
@@ -40,6 +40,7 @@ and uncheck
 ```sh
 ENABLE_PRECOMPILED_HEADERS
 WITH_MSMF
+WITH_OBSENSOR
 ```
 
 if exists.
@@ -67,9 +68,9 @@ Click `Generate` and wait a while.
 
 #### Build
 
-Open console and `cd` to `build` folder.
-
 ```sh
+mkdir -p build
+cd build
 mingw32-make -j 32
 mingw32-make install
 ```
